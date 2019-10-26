@@ -3,18 +3,18 @@ import numpy as np
 ## Element-Wise Multiplication
 
 m = np.array([[1,2,3],[4,5,6]])
-m
+print(m)
 # displays the following result:
 # array([[1, 2, 3],
 #        [4, 5, 6]])
 
 n = m * 0.25
-n
+print(n)
 # displays the following result:
 # array([[ 0.25,  0.5 ,  0.75],
 #        [ 1.  ,  1.25,  1.5 ]])
 
-m * n
+print(m * n)
 # displays the following result:
 # array([[ 0.25,  1.  ,  2.25],
 #        [ 4.  ,  6.25,  9.  ]])
@@ -28,31 +28,31 @@ np.multiply(m, n)   # equivalent to m * n
 ## Matrix Product (dot product)
 
 a = np.array([[1,2,3,4],[5,6,7,8]])
-a
+print(a)
 # displays the following result:
 # array([[1, 2, 3, 4],
 #        [5, 6, 7, 8]])
-a.shape
+print(a.shape)
 # displays the following result:
 # (2, 4)
 
 b = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12]])
-b
+print(b)
 # displays the following result:
 # array([[ 1,  2,  3],
 #        [ 4,  5,  6],
 #        [ 7,  8,  9],
 #        [10, 11, 12]])
-b.shape
+print(b.shape)
 # displays the following result:
 # (4, 3)
 
 c = np.matmul(a, b)
-c
+print(c)
 # displays the following result:
 # array([[ 70,  80,  90],
 #        [158, 184, 210]])
-c.shape
+print(c.shape)
 # displays the following result:
 # (2, 3)
 '''
@@ -67,12 +67,12 @@ np.matmul(b, a)
 ## NumPy's dot function
 
 a = np.array([[1,2],[3,4]])
-a
+print(a)
 # displays the following result:
 # array([[1, 2],
 #        [3, 4]])
 
-np.dot(a,a)
+print(np.dot(a,a))
 # displays the following result:
 # array([[ 7, 10],
 #        [15, 22]])
@@ -82,7 +82,10 @@ a.dot(a)  # you can call `dot` directly on the `ndarray`
 # array([[ 7, 10],
 #        [15, 22]])
 
-np.matmul(a,a)
+print(np.matmul(a,a))
 # array([[ 7, 10],
 #        [15, 22]])
+# use matmul & dot functions carefully
+
+
 
