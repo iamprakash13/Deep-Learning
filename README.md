@@ -8,7 +8,7 @@ basics of deep learning concepts with few examples
 
 ## Style Transfer
 <p align = 'center'>
-<a href = 'Examples/fast-style-transfer-master/examples/results/stata_udnie.jpg'><img src = 'examples/results/stata_udnie_header.jpg' width = '627px'></a>
+<a href = 'Examples/fast-style-transfer-master/examples/results/stata_udnie.jpg'><img src = 'Examples/fast-style-transfer-master/examples/results/stata_udnie_header.jpg' width = '627px'></a>
 </p>
 
 ### Dependencies
@@ -23,4 +23,8 @@ python -c "import imageio; imageio.plugins.ffmpeg.download()"
 ```
 python evaluate.py --checkpoint ./rain-princess.ckpt --in-path <path_to_input_file> --out-path ./output_image.jpg
 ```
+
+
+# Credits
+
 
